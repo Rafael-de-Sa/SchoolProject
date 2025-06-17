@@ -13,7 +13,8 @@ import edu.br.ifpr.seeder.StudentSeeder;
 public class SchoolProject {
 
     public static void main(String[] args) {
-         DisciplineSeeder.seed();
+        //DisciplineSeeder.seed();
 
+        StudentSeeder.seed();
     }
 }
