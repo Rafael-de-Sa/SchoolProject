@@ -37,10 +37,10 @@ public class Student {
     @Column(length = 50, nullable = false)
     private String registration;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "PhoneNumber")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "student")
     private List<PhoneNumber> numbers;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "Address")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "student")
     private List<Address> addresses;
 
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
