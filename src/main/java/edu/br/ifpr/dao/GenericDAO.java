@@ -47,7 +47,7 @@ public class GenericDAO<PK, T> {
 
     public void delete(T entity) {
         em.getTransaction().begin();
-        em.remove(em);
+        em.remove(entity);
         em.getTransaction().commit();
     }
 
