@@ -1,1 +1,12 @@
+edu/br/ifpr/model/entity/Student.class
 edu/br/ifpr/SchoolProject.class
+edu/br/ifpr/dao/GenericDAO.class
+edu/br/ifpr/util/PersistenceUtil.class
+edu/br/ifpr/dao/DisciplineDAO.class
+edu/br/ifpr/dao/PhoneNumberDAO.class
+edu/br/ifpr/dao/AddressDAO.class
+edu/br/ifpr/model/entity/Address.class
+edu/br/ifpr/model/entity/PhoneNumber.class
+edu/br/ifpr/seeder/DisciplineSeeder.class
+edu/br/ifpr/dao/StudentDAO.class
+edu/br/ifpr/model/entity/Discipline.class
