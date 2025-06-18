@@ -3,8 +3,7 @@
  */
 package edu.br.ifpr;
 
-import edu.br.ifpr.seeder.DisciplineSeeder;
-import edu.br.ifpr.seeder.StudentSeeder;
+import edu.br.ifpr.seeder.SchoolSeeder;
 
 /**
  *
@@ -13,8 +12,7 @@ import edu.br.ifpr.seeder.StudentSeeder;
 public class SchoolProject {
 
     public static void main(String[] args) {
-        //DisciplineSeeder.seed();
+        SchoolSeeder.seed();
 
-        StudentSeeder.seed();
     }
 }

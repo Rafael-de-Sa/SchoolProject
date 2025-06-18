@@ -10,6 +10,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  *
@@ -30,7 +33,25 @@ public class Discipline {
     @Column(length = 100, nullable = false)
     private String name;
 
+    @ManyToMany(mappedBy = "disciplines")
+    private List<Student> students;
+
     public Discipline() {
+    }
+
+    public void addStudents(Student student) {
+        if (students == null) {
+            students = new LinkedList<>();
+        }
+        students.add(student);
+    }
+
+    public List<Student> getStudents() {
+        return students;
+    }
+
+    public void setStudents(List<Student> students) {
+        this.students = students;
     }
 
     public int getId() {
